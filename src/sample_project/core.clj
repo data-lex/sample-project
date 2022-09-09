@@ -73,5 +73,5 @@
 (defn -main
   "test"
   []
-  (let [dataset (read-from-file "/Projects/data/source.json")]
-    (map (partial write-to-file "/Projects/data/result.json") (map call-processing dataset))))
+  (let [dataset (read-from-file "input/source.json")]
+    (map (partial write-to-file "output/result.json") (map call-processing dataset))))
